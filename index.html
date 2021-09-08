@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>pokedex</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select justify-content-center">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/Pokemon.png" height="60" alt="" loading="lazy">
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+
+          <div class="card my-3 shadow">
+            <div class="card-header text-center">
+              <span>
+                <img src="/assets/img/search.png" height="45" alt="" loading="lazy">
+                <img src="/assets/img/pokemonCharacters.png" height="45" alt="" loading="lazy">
+              </span>
+            </div>
+            <div class="card-body">
+              <ul id="api-pokemon" class="list-group scrollable-y" style="max-height: 50vh;">
+                <!-- LIST OF POKEMON FROM POKE API GOES HERE -->
+              </ul>
+            </div>
+            <div class="card-footer">
+              <nav>
+                <a class="navbar" href="#top">Back to Top</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" id="current-pokemon">
+          <!-- DETAILS OF CURRENT POKEMON GO HERE -->
+
+        </div>
+        <div class="col-lg-3">
+          <!-- MY POKEDEX GOES HERE -->
+          <div class="card my-3 text-center shadow">
+            <div class="card-header">
+              <img src="/assets/img/Pokedex.png" height="45" alt="" loading="lazy">
+            </div>
+            <div class="card-body">
+              <p id="my-pokedex"></p>
+            </div>
+            <div class="card-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 💖 by Codeworks</small></p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+    integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
