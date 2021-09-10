@@ -25,12 +25,12 @@ export class PokeDetail{
     </div>
     <div class="card-footer">
     <span class="ms-4">
-    <img src="/assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="/assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="/assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="/assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="/assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="/assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
     <span>
     </div>
   </div>
