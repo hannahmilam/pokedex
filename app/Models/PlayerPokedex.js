@@ -1,10 +1,11 @@
 export class PlayerPokedex{
 
   constructor(pokeData){
-this.name = pokeData.name 
-this.img = pokeData.img
-this.types = pokeData.types 
-this.user = pokeData.user
+    this.id = pokeData.id
+    this.name = pokeData.name 
+    this.img = pokeData.img
+    this.types = pokeData.types 
+    this.user = pokeData.user
   }
   get Template(){
     return /*html*/ `

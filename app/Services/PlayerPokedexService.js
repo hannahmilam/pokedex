@@ -17,7 +17,7 @@ async catchPokemon(){
 async getCaughtPokemon(){
   let res = await sandboxApi.get(`${ProxyState.user}/pokemon`)
   console.log(res)
-  ProxyState.caughtPokemon= res.data.map(p => new PlayerPokedex(p))
+  ProxyState.caughtPokemon = res.data.map(p => new PlayerPokedex(p))
 }
 }
 
