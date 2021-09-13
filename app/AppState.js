@@ -5,7 +5,7 @@ class AppState extends EventEmitter {
   user = 'Hannah'
   /** @type {import('./Models/PokedexApi.js').PokedexApi[]} */
   pokedex = []
-  /** @type {import('./Models/PokeDetail.js').PokeDetail[]} */
+  /** @type {import('./Models/PokeDetail.js').PokeDetail} */
   currentPokemon = null
   /** @type {import('./Models/PlayerPokedex.js').PlayerPokedex[]} */
   caughtPokemon = []

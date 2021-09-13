@@ -9,6 +9,7 @@ const sandboxApi = axios.create({
 class PlayerPokedexService{
 async catchPokemon(){
   const playerPokemon = new PlayerPokedex(ProxyState.currentPokemon)
+  console.log(playerPokemon)
   let res = await sandboxApi.post(`${ProxyState.user}/pokemon`, playerPokemon)
   ProxyState.caughtPokemon = [...ProxyState.caughtPokemon, new PlayerPokedex(res.data)]
   console.log(ProxyState.caughtPokemon)

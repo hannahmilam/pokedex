@@ -4,7 +4,7 @@ export class PokeDetail{
     this.name = pokeData.name
     this.types = pokeData.types
     this.stats = pokeData.stats
-    this.sprites = pokeData.sprites.front_default
+    this.img = pokeData.sprites.front_default
     this.species = pokeData.species.name
     this.abilities = pokeData.abilities
   }
@@ -13,7 +13,7 @@ export class PokeDetail{
     return /*html*/`
     <div class="card my-3 shadow">
     <div class="card-header">
-    <h3><img src="${this.sprites}" class="img-fluid" height="45" alt=""> ${this.name.toUpperCase()}</h3>
+    <h3><img src="${this.img}" class="img-fluid" height="45" alt=""> ${this.name.toUpperCase()}</h3>
     </div>
     <div class="card-body">
     <ul>
@@ -25,12 +25,7 @@ export class PokeDetail{
     </div>
     <div class="card-footer">
     <span class="ms-4">
-    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
-    <img src="./assets/img/PokeBall.png" class="selectable" height="40px" alt="" onclick="app.playerPokeController.catchPokemon()">
+    <button class="btn btn-danger" onclick="app.playerPokeController.catchPokemon()">Catch 'em</button>
     <span>
     </div>
   </div>

@@ -9,14 +9,22 @@ function _drawPokemon(){
 }
 export class PlayerPokeController{
   constructor(){
-  ProxyState.on('caughtPokemon', _drawPokemon)
-  playerPokedexService.getCaughtPokemon()
+  ProxyState.on('caughtPokemon',_drawPokemon)
+  this.getCaughtPokemon()
   }
   async catchPokemon(){
     try {
       await playerPokedexService.catchPokemon()
     } catch (error) {
       console.log('⚠ CATCH_POKEMON', error)
+    }
+  }
+
+  async getCaughtPokemon(){
+    try {
+      await playerPokedexService.getCaughtPokemon()
+    } catch (error) {
+      console.log('⚠ GET_CAUGHT', error)
     }
   }
 }

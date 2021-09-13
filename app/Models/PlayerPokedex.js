@@ -9,7 +9,7 @@ export class PlayerPokedex{
   }
   get Template(){
     return /*html*/ `
-    <li class="list-group-item py-2 selectable"> ${this.name} </li>
+    <li class="list-group-item py-2 selectable"> <img src="${this.img}" alt=""> ${this.name} </li>
     `
   }
 }
