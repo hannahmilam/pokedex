@@ -4,7 +4,7 @@ export class PokeDetail{
     this.name = pokeData.name
     this.types = pokeData.types
     this.stats = pokeData.stats
-    this.img = pokeData.sprites.front_default
+    this.img = pokeData.sprites.front_shiny
     this.species = pokeData.species.name
     this.abilities = pokeData.abilities
   }
